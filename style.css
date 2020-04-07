@@ -1,0 +1,55 @@
+body {
+    background: #2980B9;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #FFFFFF, #6DD5FA, #2980B9);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #FFFFFF, #6DD5FA, #2980B9);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+
+h1 {
+    margin-top: -40px;
+    margin-bottom: 0;
+}
+
+svg {
+    border: 2px solid black;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
+    background-color: #fff;
+}
+
+.container {
+    position: relative;
+}
+
+.tooltip {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.4);
+    color: #000;
+    display: none;
+    position: absolute;
+    z-index: 100;
+    text-align: center;
+    opacity: 0.8;
+}
+
+.tooltip.show {
+    display: block;
+}
+
+.tooltip p {
+    margin: 5px;
+}
+
+.legend {
+    position: absolute;
+    top: 20px;
+    right: 110px;
+}
